@@ -1,6 +1,6 @@
 //Homework 1, CS 113, Vishal Shah
 import java.util.Scanner;
-public class Homework_1 {
+public class Homework1 {
 
     public static void main(String[] args) {
         System.out.println("Hello, this is Homework 1 for CS113, done by Vishal Shah.");
@@ -9,7 +9,7 @@ public class Homework_1 {
 
     public static void runner() {
         Scanner intScan = new Scanner(System.in);
-        Homework_1 hw1 = new Homework_1();
+        Homework1 hw1 = new Homework1();
         System.out.println("Press 1 to continue to the problems or press 2 to exit");
         int selection = intScan.nextInt();
         if (selection == 1) {
