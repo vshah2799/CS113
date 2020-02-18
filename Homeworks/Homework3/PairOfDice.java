@@ -35,5 +35,4 @@ public class PairOfDice {
                 "\nThe sum of the die values is " + pairSum();
     }
 
-
 }
