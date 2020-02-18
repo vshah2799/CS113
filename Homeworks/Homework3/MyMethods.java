@@ -20,7 +20,7 @@ public class MyMethods {
         double sideA = numscan.nextDouble();
         MyMethods.println("Enter the hypotenuse");
         double hypo = numscan.nextDouble();
-        double thirdSide = Math.sqrt(sideA) + Math.sqrt(hypo);
+        double thirdSide = Math.sqrt((hypo*hypo) - (sideA*sideA));
         return thirdSide;
     }
 
