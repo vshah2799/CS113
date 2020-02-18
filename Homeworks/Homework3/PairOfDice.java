@@ -2,6 +2,11 @@ public class PairOfDice {
     Die die1 = new Die();
     Die die2 = new Die();
 
+    public PairOfDice(String color, String color2){
+        die1.colorSetter(color);
+        die2.colorSetter(color2);
+    }
+
     public void setDie1(Die die1) {
         this.die1 = die1;
     }
@@ -29,7 +34,6 @@ public class PairOfDice {
         return "The colors of both dice are: " + die1.colorGetter() + ", " + die2.colorGetter() +
                 "\nThe sum of the die values is " + pairSum();
     }
-    
 
 
 }
