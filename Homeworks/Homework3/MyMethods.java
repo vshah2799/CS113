@@ -24,6 +24,15 @@ public class MyMethods {
         return thirdSide;
     }
 
+    public Die comboDie(Die dice1, Die dice2){
+        String combinedColor = dice1.colorGetter() + "-" + dice2.colorGetter();
+        int combinedFace = (dice1.getFaceValue() + dice2.getFaceValue())/2;
+        Die newDie = new Die();
+        newDie.colorSetter(combinedColor);
+        newDie.setFaceValue(combinedFace);
+        return newDie;
+    }
+
     public static void println(String x) {
         System.out.println(x);
     }
