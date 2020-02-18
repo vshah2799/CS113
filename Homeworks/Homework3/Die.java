@@ -9,6 +9,11 @@ public class Die {
     public String colorGetter(){
         return color;
     }
+    public void rollVoid()
+    {
+        faceValue = (int)(Math.random() * MAX) + 1;
+    }
+
 
 
     //  Constructor: Sets the initial face value.
@@ -23,6 +28,7 @@ public class Die {
         faceValue = (int)(Math.random() * MAX) + 1;
         return faceValue;
     }
+
 
     //  Face value mutator.
     public void setFaceValue(int value)
@@ -43,10 +49,6 @@ public class Die {
 
         return result;
     }
-
-
-
-
 
     public static void println(String x) {
         System.out.println(x);
