@@ -14,7 +14,15 @@ public class MyMethods {
         return totalSurfaceArea;
     }
 
-    
+    public double rightTriangle(){
+        Scanner numscan = new Scanner(System.in);
+        MyMethods.println("Enter the first side");
+        double sideA = numscan.nextDouble();
+        MyMethods.println("Enter the hypotenuse");
+        double hypo = numscan.nextDouble();
+        double thirdSide = Math.sqrt(sideA) + Math.sqrt(hypo);
+        return thirdSide;
+    }
 
 
     public static void println(String x) {
