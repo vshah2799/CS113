@@ -30,7 +30,7 @@ public class NumberReader {
             int numOfOcc = 0;
             int currNum = (int) numberList.get(i);
 
-            for(int h = 0; h<numberList.size()-1; h++){
+            for(int h = 0; h<numberList.size(); h++){
                 int occNum = (int) numberList.get(h);
                 if(occNum==currNum) {
                     numOfOcc++;
